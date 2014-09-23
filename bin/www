@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+var CoffeeScript = require('coffee-script');
+CoffeeScript.register();
+
 var debug = require('debug')('blox');
 var app = require('../app');
 
