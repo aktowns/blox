@@ -3,7 +3,7 @@ var CoffeeScript = require('coffee-script');
 CoffeeScript.register();
 
 var debug = require('debug')('blox');
-var app = require('../app');
+var app = require('../app/app');
 
 app.set('port', process.env.PORT || 3000);
 
