@@ -3,5 +3,10 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    script(src="/socket.io/socket.io.js")
+
+    script.
+      var socket = io();
+
+    body
     block content
