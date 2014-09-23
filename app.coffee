@@ -5,12 +5,12 @@ logger        = require 'morgan'
 cookieParser  = require 'cookie-parser'
 bodyParser    = require 'body-parser'
 
-routes        = require './routes/index'
+routes        = require './app/routes/index'
 
 app           = express()
 
 # view engine setup
-app.set 'views', path.join(__dirname, 'views')
+app.set 'views', path.join(__dirname, 'app', 'views')
 app.set 'view engine', 'jade'
 
 app.use logger('dev')
